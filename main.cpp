@@ -114,37 +114,39 @@ Design the logic of your program using pseudocode or flowcharts.
 Use conditionals, loops, functions or array constructs.
 List the steps in transforming inputs into outputs. 
 
-1. PRINT "Welcome to the Phrases and Subphrases program!"
+BEGIN
+PRINT "Welcome to the Phrases and Subphrases program!"
 
-2. PRINT "Enter Phrase 1: "
-3. READ phrase1 FROM USER INPUT
-4. PRINT "You entered: " + phrase1
+PRINT "Enter Phrase 1: "
+READ phrase1 FROM USER INPUT
+PRINT "You entered: " + phrase1
 
-5. PRINT "Enter Phrase 2: "
-6. READ phrase2 FROM USER INPUT
-7. PRINT "You entered: " + phrase2
+PRINT "Enter Phrase 2: "
+READ phrase2 FROM USER INPUT
+PRINT "You entered: " + phrase2
 
-8. SET found1 = FIND phrase1 IN phrase2
-9. IF found1 IS NOT string::npos THEN
-10. PRINT phrase1 + " is found in " + phrase2
-11. PRINT SUBSTRING OF phrase2 STARTING AT found1
-12. END IF
+SET found1 = FIND phrase1 IN phrase2
+IF found1 IS NOT string::npos THEN
+PRINT phrase1 + " is found in " + phrase2
+PRINT SUBSTRING OF phrase2 STARTING AT found1
+END IF
 
-13. SET found2 = FIND phrase2 IN phrase1
-14. IF found2 IS NOT string::npos THEN
-15. PRINT phrase2 + " is found in " + phrase1
-16. PRINT SUBSTRING OF phrase1 STARTING AT found2
-17. END IF
+SET found2 = FIND phrase2 IN phrase1
+IF found2 IS NOT string::npos THEN
+PRINT phrase2 + " is found in " + phrase1
+PRINT SUBSTRING OF phrase1 STARTING AT found2
+END IF
 
-18. IF phrase1 EQUALS phrase2 THEN
-19. PRINT "Both phrases match"
-20. END IF
+IF phrase1 EQUALS phrase2 THEN
+PRINT "Both phrases match"
+END IF
 
-21. IF found1 IS string::npos AND found2 IS string::npos AND phrase1 != phrase2 THEN
-22. PRINT "No match"
-23. END IF
+IF found1 IS string::npos AND found2 IS string::npos AND phrase1 != phrase2 THEN
+PRINT "No match"
+END IF
 
-24. PRINT "Thank you for using my program!"
+PRINT "Thank you for using my program!"
+END
 
 SAMPLE RUNS
 Copy from assignment document.
